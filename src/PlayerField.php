@@ -56,7 +56,7 @@ SCRIPT;
                 if ($ext == 'mov') {
                     return <<<HTML
                     <video width="960px" height="540px" controls> 
-                        <source  src='{$url}' type='video/mp4'> 
+                        <source  src="$url" type='video/mp4'> 
                     </video>
 HTML;
                 }
