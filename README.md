@@ -54,12 +54,6 @@ For example, set the size of the player:
 $grid->foo()->video(['videoWidth' => 720, 'videoHeight' => 480]);
 ```
 
-## Donate
-
-If you feel that this project has saved you time, you may wish to support it ;)
-
-![-1](https://cloud.githubusercontent.com/assets/1479100/23287423/45c68202-fa78-11e6-8125-3e365101a313.jpg)
-
 License
 ------------
 Licensed under [The MIT License (MIT)](LICENSE).
