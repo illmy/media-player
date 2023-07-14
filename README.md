@@ -14,7 +14,7 @@ This extension allows you to play video or audio on grid pages and show pages wi
 ## Installation
 
 ```bash
-composer require laravel-admin-ext/media-player
+composer require illmy/media-player
 
 php artisan vendor:publish --tag=laravel-admin-media-player
 ```
