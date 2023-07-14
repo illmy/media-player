@@ -76,7 +76,9 @@ SCRIPT;
           <h4 class="modal-title">Play</h4>
       </div>
       <div class="modal-body">
-        <video src="$url" width="{$width}" height="{$height}"></video>
+        <video width="{$width}" height="{$height}" controls> 
+            <source src="$url" type='video/mp4'>
+        </video>
       </div>
     </div>
   </div>
