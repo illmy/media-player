@@ -50,7 +50,16 @@ SCRIPT;
                 $field->wrapped = false;
 
                 $url = MediaPlayer::getValidUrl($value, Arr::get($options, 'server'));
+                
+                $ext = pathinfo($url, PATHINFO_EXTENSION);
 
+                if ($ext == 'mov') {
+                    return <<<HTML
+                    <video width="960px" height="540px" controls> 
+                        <source  src='{$url}' type='video/mp4'> 
+                    </video>
+HTML;
+                }
                 return <<<HTML
 <video src="$url" width="960px" height="540px"></video>
 HTML;
